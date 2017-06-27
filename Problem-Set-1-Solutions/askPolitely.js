@@ -9,3 +9,18 @@ function askPolitely(sentence){
 		return sentence;
 	}
 }
+
+my solution
+
+function askPolitely(cadena){
+if(/please/.test(cadena)){
+return cadena;
+} else if(cadena.slice(-1) === "?"){
+  return cadena.replace("?"," please?");
+} else{
+return cadena;
+  }
+
+}
+
+askPolitely("My name is Grace Hopper.");
